@@ -1,0 +1,40 @@
+==4864== Memcheck, a memory error detector
+==4864== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4864== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==4864== Command: ./star_dust
+==4864== Parent PID: 4863
+==4864== 
+==4864== 
+==4864== HEAP SUMMARY:
+==4864==     in use at exit: 1,029,900 bytes in 522 blocks
+==4864==   total heap usage: 526 allocs, 4 frees, 1,041,716 bytes allocated
+==4864== 
+==4864== 2,080 bytes in 1 blocks are definitely lost in loss record 1 of 4
+==4864==    at 0x483DD99: calloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4864==    by 0x109292: read_input_hexa (in /mnt/c/Users/eucli/OneDrive/Documente/Cursuri/PC/TEMA 2/check_star_dust/star_dust)
+==4864==    by 0x109C7A: main (in /mnt/c/Users/eucli/OneDrive/Documente/Cursuri/PC/TEMA 2/check_star_dust/star_dust)
+==4864== 
+==4864== 6,712 bytes in 2 blocks are indirectly lost in loss record 2 of 4
+==4864==    at 0x483DD99: calloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4864==    by 0x1097FC: modif (in /mnt/c/Users/eucli/OneDrive/Documente/Cursuri/PC/TEMA 2/check_star_dust/star_dust)
+==4864==    by 0x109EE3: main (in /mnt/c/Users/eucli/OneDrive/Documente/Cursuri/PC/TEMA 2/check_star_dust/star_dust)
+==4864== 
+==4864== 1,016,948 bytes in 518 blocks are indirectly lost in loss record 3 of 4
+==4864==    at 0x483DD99: calloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4864==    by 0x109391: read_input_hexa (in /mnt/c/Users/eucli/OneDrive/Documente/Cursuri/PC/TEMA 2/check_star_dust/star_dust)
+==4864==    by 0x109C7A: main (in /mnt/c/Users/eucli/OneDrive/Documente/Cursuri/PC/TEMA 2/check_star_dust/star_dust)
+==4864== 
+==4864== 1,027,820 (4,160 direct, 1,023,660 indirect) bytes in 1 blocks are definitely lost in loss record 4 of 4
+==4864==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4864==    by 0x1092E3: read_input_hexa (in /mnt/c/Users/eucli/OneDrive/Documente/Cursuri/PC/TEMA 2/check_star_dust/star_dust)
+==4864==    by 0x109C7A: main (in /mnt/c/Users/eucli/OneDrive/Documente/Cursuri/PC/TEMA 2/check_star_dust/star_dust)
+==4864== 
+==4864== LEAK SUMMARY:
+==4864==    definitely lost: 6,240 bytes in 2 blocks
+==4864==    indirectly lost: 1,023,660 bytes in 520 blocks
+==4864==      possibly lost: 0 bytes in 0 blocks
+==4864==    still reachable: 0 bytes in 0 blocks
+==4864==         suppressed: 0 bytes in 0 blocks
+==4864== 
+==4864== For lists of detected and suppressed errors, rerun with: -s
+==4864== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

@@ -1,0 +1,37 @@
+// Stroe Teodora - 311CA
+
+TASK 1
+
+    Se citeste dinamic harta.
+    Se utilizeaza un pointer de tip signed char pentru a numara si insuma
+bytes-ii de pe conturul hartii:
+        - in cazul primei si ultimei linii, toti bytes-ii apartin conturului hartii
+        - in cazul celorlalte linii, bytes-ii cautati vor fi:
+            - primul byte al primului numar de pe linie
+            - ultimul byte al ultimului numar de pe linie
+    Se calculeaza media aritmetica.
+    Se afiseaza rezultatul cerut.
+
+TASK 2
+
+    Se citeste fiecare instructiune de schimbare a hartii.
+    In cazul in care un element trebuie modificat:
+        - se  trateaza in parte cazurile in care dimensiunea datelor este de
+        1, 2 sau 4 bytes
+        - in cazul in care portiunea de date ce trebuie modificata se afla in
+        afara hartii actuale, se realoca memorie, portiunea cuprinsa intre
+        ultima valoare a hartii si portiunea modificata este completata cu zerouri
+        si se creste lungimea liniei hartii
+        - prin intermediul unui pointer, se modifica elementul cerut
+    In cazul in care un element trebuie sters:
+        - se trateaza in parte cazurile in care dimensiunea datelor este de
+        1, 2 sau 4 bytes
+        - se ia un pointer cu ajutorul caruia sterg blocul de date specificat
+    In cazul in care un element trebui inversat:
+        - se trateaza in parte cazurile in care dimensiunea datelor este de
+        2 sau 4 bytes
+        - daca dimensiunea datelor este de 2 bytes se interschimba valorile
+        celor 2 bytes din blocul de memorie specificat
+        - daca dimensiunea datelor este de 4 bytes se interschimba valorile
+        bytes-ilor extremi si a celor interni din blocul de memorie specificat
+    Se afiseaza harta modificata.
