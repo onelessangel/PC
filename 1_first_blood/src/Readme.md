@@ -59,6 +59,6 @@ In cazul in care media poate fi imbunatatita:
     	
 Se afiseaza valoarea ceruta.
     	
-## 4. NOMOGRAM
+## 4. NONOGRAM
 
 Se citeste matricea si se verifica liniile si coloanele, afisand mesajul corespunzator.
