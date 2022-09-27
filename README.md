@@ -1,4 +1,4 @@
-# PC - The Basics of Computer Programming
+# PC - The basics of Computer Programming
 
 ## First Blood
 
