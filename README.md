@@ -6,7 +6,7 @@ Various beginner friendly programs to learn the basics of C programming.
 
 ```
 Ninel     - on the fly analysis;
-Vectsecv  - natural numbers propreties;
+Vectsecv  - natural numbers properties;
 Codeinvim - score improvement;
 Nonogram  - nonogram checker.
 ```
